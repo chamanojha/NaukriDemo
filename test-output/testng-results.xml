@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="4" total="15" passed="11">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="118089" started-at="2022-10-28T07:20:19 IST" finished-at="2022-10-28T07:22:17 IST">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="118089" started-at="2022-10-28T07:20:19 IST" finished-at="2022-10-28T07:22:17 IST">
+      <class name="com.naukri.qa.page.test.HomePageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.naukri.qa.page.test.HomePageTest@6a1aab78]" name="setUp" is-config="true" duration-ms="1" started-at="2022-10-28T07:20:25 IST" finished-at="2022-10-28T07:20:25 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyHomePageTitle()[pri:1, instance:com.naukri.qa.page.test.HomePageTest@6a1aab78]" name="verifyHomePageTitle" duration-ms="18365" started-at="2022-10-28T07:20:25 IST" finished-at="2022-10-28T07:20:43 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyHomePageTitle -->
+        <test-method status="PASS" signature="verifyHomePageLogo()[pri:2, instance:com.naukri.qa.page.test.HomePageTest@6a1aab78]" name="verifyHomePageLogo" duration-ms="42" started-at="2022-10-28T07:20:43 IST" finished-at="2022-10-28T07:20:43 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyHomePageLogo -->
+        <test-method status="PASS" signature="enterInSerachFeild()[pri:3, instance:com.naukri.qa.page.test.HomePageTest@6a1aab78]" name="enterInSerachFeild" duration-ms="13511" started-at="2022-10-28T07:20:43 IST" finished-at="2022-10-28T07:20:57 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterInSerachFeild -->
+      </class> <!-- com.naukri.qa.page.test.HomePageTest -->
+      <class name="com.naukri.qa.page.test.LoginPageTest">
+        <test-method status="PASS" signature="intializeDriver()[pri:0, instance:com.naukri.qa.page.test.LoginPageTest@1060b431]" name="intializeDriver" is-config="true" duration-ms="5032" started-at="2022-10-28T07:20:13 IST" finished-at="2022-10-28T07:20:19 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- intializeDriver -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.naukri.qa.page.test.LoginPageTest@1060b431]" name="setUp" is-config="true" duration-ms="19" started-at="2022-10-28T07:20:19 IST" finished-at="2022-10-28T07:20:19 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyNaukriLogoTest()[pri:1, instance:com.naukri.qa.page.test.LoginPageTest@1060b431]" name="verifyNaukriLogoTest" duration-ms="84" started-at="2022-10-28T07:20:19 IST" finished-at="2022-10-28T07:20:19 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyNaukriLogoTest -->
+        <test-method status="PASS" signature="verifyLoginPageTitleTest()[pri:2, instance:com.naukri.qa.page.test.LoginPageTest@1060b431]" name="verifyLoginPageTitleTest" duration-ms="41" started-at="2022-10-28T07:20:19 IST" finished-at="2022-10-28T07:20:19 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginPageTitleTest -->
+        <test-method status="PASS" signature="verifyLoginPageTest()[pri:3, instance:com.naukri.qa.page.test.LoginPageTest@1060b431]" name="verifyLoginPageTest" duration-ms="6314" started-at="2022-10-28T07:20:19 IST" finished-at="2022-10-28T07:20:25 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginPageTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.naukri.qa.page.test.LoginPageTest@1060b431]" name="tearDown" is-config="true" duration-ms="733" started-at="2022-10-28T07:22:17 IST" finished-at="2022-10-28T07:22:17 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.naukri.qa.page.test.LoginPageTest -->
+      <class name="com.naukri.qa.page.test.PendingActionsTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.naukri.qa.page.test.PendingActionsTest@69b0fd6f]" name="setup" is-config="true" duration-ms="29166" started-at="2022-10-28T07:20:57 IST" finished-at="2022-10-28T07:21:26 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="verifYPendingLogoTest()[pri:1, instance:com.naukri.qa.page.test.PendingActionsTest@69b0fd6f]" name="verifYPendingLogoTest" duration-ms="17" started-at="2022-10-28T07:21:26 IST" finished-at="2022-10-28T07:21:26 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifYPendingLogoTest -->
+        <test-method status="PASS" signature="verifyPenfingActionsTextTest()[pri:2, instance:com.naukri.qa.page.test.PendingActionsTest@69b0fd6f]" name="verifyPenfingActionsTextTest" duration-ms="55" started-at="2022-10-28T07:21:26 IST" finished-at="2022-10-28T07:21:26 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyPenfingActionsTextTest -->
+        <test-method status="PASS" signature="selectAllTabs()[pri:3, instance:com.naukri.qa.page.test.PendingActionsTest@69b0fd6f]" name="selectAllTabs" duration-ms="11701" started-at="2022-10-28T07:21:26 IST" finished-at="2022-10-28T07:21:38 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectAllTabs -->
+        <test-method status="PASS" signature="footerText()[pri:4, instance:com.naukri.qa.page.test.PendingActionsTest@69b0fd6f]" name="footerText" duration-ms="4082" started-at="2022-10-28T07:21:38 IST" finished-at="2022-10-28T07:21:42 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- footerText -->
+        <test-method status="PASS" signature="enterfields()[pri:5, instance:com.naukri.qa.page.test.PendingActionsTest@69b0fd6f]" name="enterfields" duration-ms="34636" started-at="2022-10-28T07:21:42 IST" finished-at="2022-10-28T07:22:17 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterfields -->
+      </class> <!-- com.naukri.qa.page.test.PendingActionsTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
