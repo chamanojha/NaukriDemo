@@ -46,6 +46,7 @@ public class PendingActionsTest extends TestBase {
 	public void  verifyPenfingActionsTextTest() throws Exception {
 		try {
 			Assert.assertTrue(pendinActions.pendingActionsText());
+			pendinActions.geUploadText();
 		} catch (Exception e) {
 			throw new Exception("unable to verify Penfing Actions Text Test");
 		}
@@ -73,7 +74,7 @@ public class PendingActionsTest extends TestBase {
 	@Test(priority = 5)
 	public void enterfields() throws Exception {
 		try {
-			pendinActions.enterfields("iris software", "2 years", "banglore");
+			pendinActions.enterfields("iris software", "2 years", "Banglore");
 			
 
 		} catch (Exception e) {

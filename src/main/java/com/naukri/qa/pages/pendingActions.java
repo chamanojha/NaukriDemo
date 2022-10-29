@@ -22,6 +22,9 @@ public class pendingActions extends TestBase {
 	@FindBy(xpath = "//span[text()='Upload Photo']")
 	WebElement uploadPhoto;
 	
+	@FindBy(xpath = "(//span[@class='empty'])[1]")
+	WebElement uploadGetText;
+	
 	@FindBy(xpath= "//div[text()='Services']")
 	WebElement serviceTab;
 	
@@ -53,6 +56,11 @@ public class pendingActions extends TestBase {
 	}
 	public boolean  pendingActionsText() {
 		return uploadPhoto.isDisplayed();
+		
+	}
+	public void geUploadText() {
+		String uploadText = uploadGetText.getText();
+		System.out.println(uploadText);
 	}
 	public void selectIcon() throws Exception {
 		Thread.sleep(3000);

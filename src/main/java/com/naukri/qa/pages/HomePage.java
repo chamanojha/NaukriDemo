@@ -26,11 +26,8 @@ public class HomePage extends TestBase{
 	@FindBy(xpath = "//div[@class='nI-gNb-notif-center']")
 	WebElement notifiactionIcon;
 	
-	@FindBy(xpath ="//div[text()= 'Upload Resume']")
-	WebElement uploadResume;
-	
-	
-	
+	@FindBy(xpath ="//div[text()='Upload Photo']")
+	WebElement uploadPhoto;
 	
 	@FindBy(xpath = "//input[@name='qp']")
 	WebElement searchField;
@@ -63,19 +60,20 @@ public class HomePage extends TestBase{
 		Thread.sleep(3000);
 		action.moveToElement(notifiactionIcon).build().perform();
 		Thread.sleep(4000);
-		uploadResume.click();
+		uploadPhoto.click();
+		Thread.sleep(3000);
 		return new pendingActions();
 	}
 	
 	
 	public void enterInSearchField(String text,String text1) throws Exception {
-		Thread.sleep(3000);
+		Thread.sleep(1000);
 		searchField.sendKeys(text);
-		Thread.sleep(4000);
+		Thread.sleep(2000);
 		location_field.sendKeys(text1);
-		Thread.sleep(3000);
+		Thread.sleep(2000);
 		search_Button.click();
-		Thread.sleep(3000);
+		Thread.sleep(2000);
 	}
 	
 	
