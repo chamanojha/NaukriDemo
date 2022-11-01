@@ -19,6 +19,9 @@ public class pageUtils extends TestBase {
 		Select select = new Select((WebElement) xpath);
 		select.selectByValue(value);
 	}
+	public static void backToPreviousPage() {
+		driver.navigate().back();
+	}
 }
 	
 

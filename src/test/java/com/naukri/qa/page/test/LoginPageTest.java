@@ -59,7 +59,7 @@ public class LoginPageTest extends TestBase{
 		try {
 			homepage = login.submitForm(prop.getProperty("userName"), prop.getProperty("password"));
 			
-			Thread.sleep(6000);
+			Thread.sleep(2000);
 		} catch (Exception e) {
 			throw new Exception("unable to  verify Login page");
 		}

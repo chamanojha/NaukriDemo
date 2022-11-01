@@ -5,9 +5,10 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import com.naukri.qa.base.TestBase;
+import com.naukri.qa.pages.AboutPage;
 import com.naukri.qa.pages.HomePage;
 import com.naukri.qa.pages.LoginPage;
-import com.naukri.qa.pages.pendingActions;
+import com.naukri.qa.pages.PendingActions;
 import com.naukri.qa.utils.pageUtils;
 
 import junit.framework.Assert;
@@ -16,7 +17,8 @@ public class PendingActionsTest extends TestBase {
 	LoginPage login;
 	pageUtils utils;
 	HomePage homepage;
-	pendingActions pendinActions;
+	PendingActions pendinActions;
+	AboutPage aboutpage ;
 	
 
 	PendingActionsTest(){
@@ -27,7 +29,9 @@ public class PendingActionsTest extends TestBase {
 		
 		login = new LoginPage();
 		homepage = new HomePage();
-		pendinActions = new pendingActions();
+		pendinActions = new PendingActions();
+		aboutpage = new AboutPage();
+		
 		homepage.clickNotificationIcon();
 		Thread.sleep(5000);
 		
@@ -75,6 +79,10 @@ public class PendingActionsTest extends TestBase {
 	public void enterfields() throws Exception {
 		try {
 			pendinActions.enterfields("iris software", "2 years", "Banglore");
+			Thread.sleep(3000);
+			pageUtils.backToPreviousPage();
+			Thread.sleep(3000);
+			
 			
 
 		} catch (Exception e) {

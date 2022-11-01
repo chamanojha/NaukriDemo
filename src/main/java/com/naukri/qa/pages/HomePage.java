@@ -48,30 +48,28 @@ public class HomePage extends TestBase{
 	public void clickOnCompanies() throws Exception {
 		Thread.sleep(3000);
 		Actions action =new Actions(driver);
-		Thread.sleep(3000);
+		Thread.sleep(2000);
 		action.moveToElement(companies).build().perform();
-		Thread.sleep(3000);
+		Thread.sleep(2000);
 		topCompanies.click();
 	}
 	
-	public pendingActions clickNotificationIcon() throws Exception {
+	public PendingActions clickNotificationIcon() throws Exception {
 		Thread.sleep(3000);
 		Actions action =new Actions(driver);
 		Thread.sleep(3000);
 		action.moveToElement(notifiactionIcon).build().perform();
-		Thread.sleep(4000);
+		Thread.sleep(2000);
 		uploadPhoto.click();
-		Thread.sleep(3000);
-		return new pendingActions();
+		Thread.sleep(2000);
+		return new PendingActions();
 	}
 	
 	
 	public void enterInSearchField(String text,String text1) throws Exception {
 		Thread.sleep(1000);
 		searchField.sendKeys(text);
-		Thread.sleep(2000);
 		location_field.sendKeys(text1);
-		Thread.sleep(2000);
 		search_Button.click();
 		Thread.sleep(2000);
 	}

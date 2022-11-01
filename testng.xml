@@ -6,6 +6,7 @@
        <class name="com.naukri.qa.page.test.LoginPageTest"/>
    	   <class name="com.naukri.qa.page.test.HomePageTest"/>
    	   <class name="com.naukri.qa.page.test.PendingActionsTest"/>
+   	   <class name="com.naukri.qa.page.test.AboutPageTest"/>
    	   
     </classes>
   </test> <!-- Test -->

@@ -10,9 +10,9 @@ import org.openqa.selenium.support.PageFactory;
 import com.naukri.qa.base.TestBase;
 import com.naukri.qa.utils.pageUtils;
 
-public class pendingActions extends TestBase {
+public class PendingActions extends TestBase {
 	
-	public pendingActions(){
+	public PendingActions(){
 		PageFactory.initElements(driver, this);
 	}
 	
@@ -49,6 +49,10 @@ public class pendingActions extends TestBase {
 	
 	@FindBy(xpath =  "//span[text()='Search']")
 	WebElement searchIcon;
+	
+	
+	@FindBy(xpath = "//a[text()='About us']")
+	WebElement about_button;
 
 
 	public String verifYPendingActionsTitle() {
@@ -63,9 +67,9 @@ public class pendingActions extends TestBase {
 		System.out.println(uploadText);
 	}
 	public void selectIcon() throws Exception {
-		Thread.sleep(3000);
+		Thread.sleep(2000);
 		Actions action =new Actions(driver);
-		Thread.sleep(3000);
+		Thread.sleep(2000);
 		action.moveToElement(serviceTab).build().perform();
 		List<WebElement> tabs = selectTabs;
 		System.out.println(tabs.size());
@@ -83,15 +87,15 @@ public class pendingActions extends TestBase {
 		
 	}
 	
-	public void enterSearchIcon() {
+	public void clickSearchbutton() {
 		enterSearchButton.click();
 		
 	}
 	public void enterfields(String companiesName ,String experience , String location) throws Exception {
-		enterSearchIcon();
+		clickSearchbutton();
 		enterField.sendKeys(companiesName);
 		SelectExperienceField1.click();
-		Thread.sleep(4000);
+		Thread.sleep(2000);
 		for(int i=0 ; i<SelectExperienceField.size(); i++) {
 			if(SelectExperienceField.get(i).getText().contains(experience)){
 				SelectExperienceField.get(i).click();
@@ -100,12 +104,16 @@ public class pendingActions extends TestBase {
 		}
 		
 		
-		Thread.sleep(3000);
+		Thread.sleep(2000);
 		enterlocation.sendKeys(location);
-		Thread.sleep(4000);
+		Thread.sleep(2000);
 
 		searchIcon.click();
 		
+	}
+	public AboutPage clickOnAboutButton() {
+		about_button.click();
+		return new AboutPage();
 	}
 	
 	
