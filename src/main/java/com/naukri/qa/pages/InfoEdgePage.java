@@ -1,8 +1,7 @@
 package com.naukri.qa.pages;
 
-import java.util.Iterator;
+
 import java.util.List;
-import java.util.Set;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -11,8 +10,8 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.naukri.qa.base.TestBase;
 
-public class AboutPage extends TestBase {
-	public AboutPage() {
+public class InfoEdgePage extends TestBase {
+	public InfoEdgePage() {
 		PageFactory.initElements(driver, this);
 	}
 	@FindBy(xpath = "(//img[@src='/img/logo.gif'])[1]")
@@ -24,8 +23,8 @@ public class AboutPage extends TestBase {
 
 	@FindBy(xpath = "//div[@class=\"leftside\"]//li/a")
 	List<WebElement> suggestionTab;
-	
-	
+
+
 
 
 	public String verifyInfoEdgeTitle() {
@@ -35,14 +34,11 @@ public class AboutPage extends TestBase {
 	public boolean verifyInfoEdgePageLogo() {
 		return infoEdgeLogo.isDisplayed();
 	}
-	
-	public void toGetWindowTitle() {
-		Set<String> windowHandles = driver.getWindowHandles();
-		Iterator<String>it =   windowHandles.iterator();
-		while(it.hasNext()) {
-			driver.switchTo().window(it.next());
-		}
-	}
+
+
+
+
+
 	public void clickOninvestorRelationsTab() {
 		Actions action = new Actions(driver);
 		action.moveToElement(investorRelationsTab).build().perform();
@@ -58,5 +54,8 @@ public class AboutPage extends TestBase {
 			}
 		}
 	}
+
+
+
 
 }

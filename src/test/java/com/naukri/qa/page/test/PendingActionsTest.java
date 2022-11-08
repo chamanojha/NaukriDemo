@@ -5,8 +5,8 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import com.naukri.qa.base.TestBase;
-import com.naukri.qa.pages.AboutPage;
 import com.naukri.qa.pages.HomePage;
+import com.naukri.qa.pages.InfoEdgePage;
 import com.naukri.qa.pages.LoginPage;
 import com.naukri.qa.pages.PendingActions;
 import com.naukri.qa.utils.pageUtils;
@@ -18,7 +18,7 @@ public class PendingActionsTest extends TestBase {
 	pageUtils utils;
 	HomePage homepage;
 	PendingActions pendinActions;
-	AboutPage aboutpage ;
+	InfoEdgePage infoEdgePage ;
 	
 
 	PendingActionsTest(){
@@ -30,7 +30,7 @@ public class PendingActionsTest extends TestBase {
 		login = new LoginPage();
 		homepage = new HomePage();
 		pendinActions = new PendingActions();
-		aboutpage = new AboutPage();
+		infoEdgePage = new InfoEdgePage();
 		
 		homepage.clickNotificationIcon();
 		Thread.sleep(5000);
